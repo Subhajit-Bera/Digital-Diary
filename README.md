@@ -1,2 +1,2 @@
-# Blog-Website
- Blog website is a web application ,where an user can post ther daily blogs.Tachnology used HTML,CSS,JS,EJS.,ExpressJS,MongoDB,Mongoose
+# Digital-Diary
+ Digital Diary is a web application ,where an user can post ther daily records.Tachnology used HTML,CSS,JS,EJS.,NodeJS,ExpressJS,MongoDB,Mongoose
