@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
+require("dotenv").config();
 
 const homeStartingContent = "Digital Diary is your personal digital sanctuary where you can pour your heart out, document your life journey, and record the moments that matter most. With our intuitive and user-friendly platform, you can write and organize your entries with ease.";
 const aboutContent = "We are thrilled to be part of your journey, and we look forward to being your trusted companion as you write the story of your life. Your digital diary is your canvas, and we are here to empower you to paint it with your words, emotions, and memories.Feel free to explore our platform, start your digital diary, and take the first step toward capturing the essence of your life.Thank you for choosing us as your digital diary companion!";
@@ -16,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/blogDB");
+mongoose.connect(process.env.MONGODB_URL);
 
 const postSchema = {
     title: String,
